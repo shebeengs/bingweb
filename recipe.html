@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bing's Recipe book</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="/images/bingclo.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Hanalei+Fill&family=Langar&display=swap" rel="stylesheet">
+    </head>
+    
+    <style>
+        body{
+            font-family: 'Architects Daughter', cursive;
+            background-color: rgb(245, 244, 244);
+            background-image: url(/images/Subtle-Prism.svg);
+            background-size: cover;
+        }
+        h2 {
+            font-family: "Hanalei Fill", cursive;
+            font-size: 2em;
+        }
+        .recipe {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            background-image: url(/images/text-bg-1.png);
+            width: fit-content;
+            height: fit-content;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 20px;
+        }
+        .step {
+            color: rgb(0, 129, 189);
+        }
+        thead {
+            background-color: rgb(205, 172, 129)
+        }
+        #body-all {
+            float: right;
+            width: 80%;
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        #body-1 {
+            position: relative;
+            top: 40px;
+        }
+        #contents {
+            float: left;
+            width: 20%;
+            max-width: 250px;
+            position: fixed;
+            top: 50px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 20px;
+            margin-right: 20px;
+        }
+        #back {
+            background-image: url(/images/Endless-Constellation.svg);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 60px;
+            padding-left: 10px;
+            font-family: Langar, serif;
+            z-index: 100;
+            color: rgb(205, 172, 129);
+        }
+        #header-1 {
+            color: rgb(176, 82, 0);
+            font-family: "Langar", serif;
+            font-size: 2.5em;
+            z-index: 101;
+            position: fixed;
+            top: 0px;
+            margin:auto;
+            height: 60px;
+        }
+        .recipe-steps {
+            max-width: 500px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            background-color: khaki;
+        }
+    </style>
+    
+    <body>
+   
+    <div id="back">
+        <p><a href="/index.html"><img src="/images/bingclo.png" alt="logo" width="17px">   Back to main page</a></p>
+    </div>
+    <div id="contents">
+        <h2>Contents:</h2>
+            <ul>
+                <li><a href="#steak">Garlic-Butter Steak</a></li>
+                <li><a href="#carbonara">Spaghetti Pasta Carbonara</a></li>
+                <li><a href="#chicken-wings">Garlic Parmesan Chicken Wings</a></li>
+            </ul>
+    </div>
+    <div id="scroll-top"></div>
+    <div id="body-all">
+        <h1 id="header-1"><a href="#scroll-top">Bing's Recipe Book</a></h1>
+        <div id="body-1">
+            <h2 id="steak" class="recipe">Garlic-Butter Steak</h2>
+                
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Steak_with_shitaki_mushrooms.jpg" alt="steak" width="500">
+                
+                <ul>
+                    <li><strong>Time</strong>: 20 min.</li>
+                    <li><strong>Serves</strong>: 2</li>
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredients</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td>Butter - softened, divided</td>
+                        <td>2 tablespoons</td>
+                    </tbody>
+                    <tbody>
+                        <td>Fresh Parsley - minced</td>
+                        <td>1 teaspoon</td>
+                    </tbody>
+                    <tbody>
+                        <td>Minced Garlic</td>
+                        <td>1/2 teaspoon</td>
+                    </tbody>
+                    <tbody>
+                        <td>Reduced-sodium Soy Sauce</td>
+                        <td>1/4 teaspoon</td>
+                    </tbody>
+                    <tbody>
+                        <td>Salt</td>
+                        <td>1/8 teaspoon</td>
+                    </tbody>
+                    <tbody>
+                        <td>Pepper</td>
+                        <td>1/8 teaspoon</td>
+                    </tbody>
+                    <tbody>
+                        <td>Beef flat iron steak or Boneless top sirloin steak</td>
+                        <td> 3/4 pounds</td>
+                    </tbody>
+                </table>
+                <div class="recipe-steps">
+                    <p><strong class="step">Step 1:</strong> Mix 1 tablespoon butter, parsley, garlic and soy sauce.</p>
+                    <p><strong class="step">Step 2:</strong> Sprinkle steak with salt and pepper.</p>
+                    <p><strong class="step">Step 3:</strong> In a large skillet, heat remaining butter over medium heat.</p>
+                    <p><strong class="step">Step 4:</strong> Add steak; cook until meat reaches desired doneness (for medium-rare, a thermometer should read 135°; medium, 140°; medium-well, 145°), 4-7 minutes per side.</p>
+                    <p><strong class="step">Step 5:</strong> Serve with garlic butter.</p>
+                </div>
+                <p><em>Source: <a target="_blank" href="https://www.tasteofhome.com/recipes/garlic-butter-steak/">Garlic-Butter Steak</a></em></p>
+            
+            <h2 id="carbonara" class="recipe">Spaghetti Pasta Carbonara</h2>
+                
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Spaghetti_carbonara.jpg" alt="steak" width="500">
+                
+                <ul>
+                    <li><strong>Time</strong>: 30 min.</li>
+                    <li><strong>Serves</strong>: 4-6</li>
+                </ul>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredients</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td>Extra virgin olive oil or unsalted butter</td>
+                        <td>1 tablespoon</td>
+                    </tbody>
+                    <tbody>
+                        <td>Pancetta or thick cut bacon, diced</td>
+                        <td>1/2 pound</td>
+                    </tbody>
+                    <tbody>
+                        <td>Garlic cloves, minced</td>
+                        <td>1 teaspoon</td>
+                    </tbody>
+                    <tbody>
+                        <td>Whole eggs</td>
+                        <td>3-4 pcs</td>
+                    </tbody>
+                    <tbody>
+                        <td>Grated parmesan or pecorino cheese</td>
+                        <td>1 cup</td>
+                    </tbody>
+                    <tbody>
+                        <td>spaghetti pasta (or bucatini or fettuccine)</td>
+                        <td>1 pound</td>
+                    </tbody>
+                    <tbody>
+                        <td>Salt and black pepper to taste</td>
+                        <td> </td>
+                    </tbody>
+                </table>
+                <div class="recipe-steps">
+                    <p><strong class="step">Step 1:</strong> Heat pasta water: Put a large pot of salted water on to boil (1 Tbsp salt for every 2 quarts of water.)</p>
+                    <p><strong class="step">Step 2:</strong> Sauté pancetta/bacon and garlic: While the water is coming to a boil, heat the olive oil in a large sauté pan over medium heat. Add the bacon or pancetta and cook slowly until crispy.</p>
+                    <p>Add the garlic (if using) and cook another minute, then turn off the heat and put the pancetta and garlic into a large bowl.</p>
+                    <p><strong class="step">Step 3:</strong> Beat eggs and half of the cheese: In a small bowl, beat the eggs and mix in about half of the cheese.</p>
+                    <p><strong class="step">Step 4:</strong> Cook pasta: Once the water has reached a rolling boil, add the dry pasta, and cook, uncovered, at a rolling boil.</p>
+                    <p><strong class="step">Step 5:</strong> Toss pasta with pancetta/bacon: When the pasta is al dente (still a little firm, not mushy), use tongs to move it to the bowl with the bacon and garlic. Let it be dripping wet. Reserve some of the pasta water.</p>
+                    <p>Move the pasta from the pot to the bowl quickly, as you want the pasta to be hot. It's the heat of the pasta that will heat the eggs sufficiently to create a creamy sauce.</p>
+                    <p>Toss everything to combine, allowing the pasta to cool just enough so that it doesn't make the eggs curdle when you mix them in. (That's the tricky part.)</p>
+                    <p><strong class="step">Step 6:</strong> Add the beaten egg mixture: Add the beaten eggs with cheese and toss quickly to combine once more. Add salt to taste. Add some pasta water back to the pasta to keep it from drying out.</p>
+                    <p>Serve at once with the rest of the parmesan and freshly ground black pepper. If you want, sprinkle with a little fresh chopped parsley.</p>
+                </div>
+                
+                <p><em>Source: <a target="_blank" href="https://www.simplyrecipes.com/recipes/spaghetti_alla_carbonara/">Spaghetti Pasta Carbonara</a></em></p>
+            
+            <h2 id="chicken-wings" class="recipe">Garlic Parmesan Chicken Wings</h2>
+                
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Chicken_Maryland_%284230562563%29.jpg" alt="steak" width="500">
+                
+                <ul>
+                    <li><strong>Time</strong>: 45 min.</li>
+                    <li><strong>Serves</strong>: 3</li>
+                </ul>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredients</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td>Chicken wings</td>
+                        <td>10 pieces</td>
+                    </tbody>
+                    <tbody>
+                        <td>Garlic powder</td>
+                        <td>1 tsp</td>
+                    </tbody>
+                    <tbody>
+                        <td>Dried oregano</td>
+                        <td>1/2 tsp</td>
+                    </tbody>
+                    <tbody>
+                        <td>Salt</td>
+                        <td>1/4 tsp</td>
+                    </tbody>
+                    <tbody>
+                        <td>Freshly grated Parmesan cheese</td>
+                        <td>1/2 cup</td>
+                    </tbody>
+                    <tbody>
+                        <td>Unsalted butter, melted</td>
+                        <td>1/4 cup</td>
+                    </tbody>
+                </table>
+                <div class="recipe-steps">
+                    <p><strong class="step">Step 1:</strong> Preheat the oven to 450 degrees F.</p>
+                    <p><strong class="step">Step 2:</strong> Heat up a big pot of boiling water. Season the water with salt, like you would for cooking pasta (taste the water, it should taste a little repulsively salty, like sea water).</p>
+                    <p><strong class="step">Step 3:</strong> Boil the chicken wings for 7-8 minutes, then drain well and dry very well with a paper towel. If you don’t dry them really well now, they won’t get crispy in the oven</p>
+                    <p><strong class="step">Step 4:</strong> Place the wings fatty side down on a sheet pan, and bake for 25-30 minutes on one side, then flip the wings and bake for another 5 minutes on the other side. The wings should have crispy crackly golden skin on the side that was in contact with the sheet pan.</p>
+                    <p><strong class="step">Step 5:</strong> Combine the garlic powder, oregano, salt, Parmesan, and butter, then toss the chicken wings in the mixture. Serve and enjoy!</p>
+                    <p><em>Source: <a target="_blank" href="https://www.fifteenspatulas.com/garlic-parmesan-chicken-wings/">Garlic Parmesan Chicken Wings</a></em></p>
+                </div>
+        </div>
+    </div>
+    </body>
+</html>
